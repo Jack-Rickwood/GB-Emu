@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\include\</FILEPATH>
+      <FILENAME>SDL_rect.h</FILENAME>
+      <LINE>102</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'SDL_bool' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>SDL_PointInRect</FUNCTION>
+    <DECORATED>SDL_PointInRect</DECORATED>
+    <FUNCLINE>99</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+      <FILENAME>Gameboy.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '65744' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>Gameboy::LoadRom</FUNCTION>
+    <DECORATED>?LoadRom@Gameboy@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+      <FILENAME>Registers.h</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Registers::flagsRegister' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Registers::{ctor}</FUNCTION>
+    <DECORATED>??0Registers@@QEAA@XZ</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Registers::flagsRegister</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+      <FILENAME>CPU.h</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'CPU::pc' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>CPU::{ctor}</FUNCTION>
+    <DECORATED>??0CPU@@QEAA@XZ</DECORATED>
+    <FUNCLINE>29</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>CPU::pc</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+      <FILENAME>Memory.h</FILENAME>
+      <LINE>71</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'MMU::memory' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>MMU::{ctor}</FUNCTION>
+    <DECORATED>??0MMU@@QEAA@XZ</DECORATED>
+    <FUNCLINE>71</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>MMU::memory</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+      <FILENAME>Memory.h</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'MMU::romHeader::romSize' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>MMU::romHeader::{ctor}</FUNCTION>
+    <DECORATED>??0romHeader@MMU@@QEAA@XZ</DECORATED>
+    <FUNCLINE>60</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>MMU::romHeader::romSize</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+      <FILENAME>Memory.cpp</FILENAME>
+      <LINE>42</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'romData':  the readable size is 'size*1' bytes, but '309' bytes may be read.</DESCRIPTION>
+    <FUNCTION>MMU::LoadRom</FUNCTION>
+    <DECORATED>?LoadRom@MMU@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>27</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>28</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>29</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>32</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>33</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>34</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>36</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>37</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'romData' is an Output from 'std::basic_istream&lt;char,std::char_traits&lt;char&gt; &gt;::read' (declared at c:\program files (x86)\microsoft visual studio\2019\community\vc\tools\msvc\14.24.28314\include\istream:507)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>38</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>41</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'i&lt;=15')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\jackr\Documents\Gameboy Emulator\src\</FILEPATH>
+        <FILENAME>Memory.cpp</FILENAME>
+        <LINE>42</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid read from 'romData[308]', (readable range is 0 to 0)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT></DEFECTS>

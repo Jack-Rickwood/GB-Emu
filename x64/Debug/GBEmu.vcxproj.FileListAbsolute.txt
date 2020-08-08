@@ -1,0 +1,2 @@
+C:\Users\Jack\Documents\Gameboy Emulator\x64\Debug\GBEmu.exe
+C:\Users\Jack\Documents\Gameboy Emulator\x64\Debug\GBEmu.pdb
